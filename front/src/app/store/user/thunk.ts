@@ -1,7 +1,5 @@
 import firebase from "firebase/app";
 
-// import * from"firebase/auth"
-
 import { Dispatch } from "redux";
 import { setLoggedInUser } from "../../services/auth";
 import { IUser } from "../../types/user";
@@ -31,12 +29,12 @@ export const logIn = () => async (dispatch: Dispatch, getState: () => any) => {
     })
     .catch(function (error) {
       // Handle Errors here.
-      var errorCode = error.code;
+      //  var errorCode = error.code;
       var errorMessage = error.message;
       // The email of the user's account used.
-      var email = error.email;
-      // The firebase.auth.AuthCredential type that was used.
-      var credential = error.credential;
+      // var email = error.email;
+      // // The firebase.auth.AuthCredential type that was used.
+      // var credential = error.credential;
       alert(errorMessage);
 
       // ...

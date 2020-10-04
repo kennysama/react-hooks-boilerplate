@@ -1,11 +1,11 @@
 import React from "react";
 import AppRouter from "../../AppRouter";
+import Header from "../header/header";
 
 function Template() {
   return (
     <>
-      <p>nav bar</p>
-      <hr />
+      <Header />
       <AppRouter />
     </>
   );

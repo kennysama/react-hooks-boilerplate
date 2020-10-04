@@ -1,5 +1,5 @@
 import { getLoggedInUser } from "../../services/auth";
-import { INITIAL_LOGGED_IN, IUser } from "../../types/user";
+import { IUser } from "../../types/user";
 import { Actions, ActionType } from "./actions";
 
 export interface IUserState {

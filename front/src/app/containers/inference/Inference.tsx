@@ -1,9 +1,7 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { AppState } from "../../store/store";
 
 function Inference() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const onAddNoteClick = () => {};
   return (

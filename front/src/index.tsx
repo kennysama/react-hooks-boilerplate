@@ -10,7 +10,6 @@ import "./index.css";
 import App from "./app/App";
 import * as serviceWorker from "./serviceWorker";
 import { configureStore } from "./app/store/store";
-import LogIn from "./app/containers/login/login";
 import { firebaseConfig } from "./app/firebase";
 
 const store = configureStore({});
@@ -19,6 +18,12 @@ firebase.initializeApp(firebaseConfig);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
+      {/* replace this in future with embedded */}
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      />
+
       <App />
     </Provider>
   </React.StrictMode>,

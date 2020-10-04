@@ -88,7 +88,7 @@ export function canDisplayLink(path: ERouterPath): boolean {
 }
 
 function getMaxAge(): string {
-  return (1 * 60 * 2).toString();
+  return (1 * 60 * 6).toString();
 }
 
 function getCookieObject(): any {
